@@ -9,15 +9,15 @@ public class CalculatorImpl implements ICalculator {
 	}
 
 	public Long sub(Integer a, Integer b) {
-		return null;
+		return new BigInteger(a+"").multiply(new BigInteger(b+"")).longValue();
 	}
 
 	public Long mul(Integer a, Integer b) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public Long div(Integer a, Integer b) {
+
 		return new BigInteger(a+"").divide(new BigInteger(b+"")).longValue();
 	}
 
