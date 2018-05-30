@@ -9,7 +9,7 @@ public class CalculatorImpl implements ICalculator {
 	}
 
 	public Long sub(Integer a, Integer b) {
-		return new BigInteger(a + "").subtract(new BigInteger(b + "")).longValue();
+		return new BigInteger(a + "").multiply(new BigInteger(b + "")).longValue();
 	}
 
 	public Long mul(Integer a, Integer b) {
@@ -17,7 +17,7 @@ public class CalculatorImpl implements ICalculator {
 	}
 
 	public Long div(Integer a, Integer b) {
-		return null;
+		return new BigInteger(a + "").divide(new BigInteger(b + "")).longValue();
 	}
 
 }
